@@ -7,9 +7,13 @@
         <div class="col-lg-6">
             <form action="." method="post">
                 {% csrf_token %}
-                {{ news_form }}
+                <table>
+                    {{ news_form }}
+                </table>
                 <button type="submit">{% trans "submit" %}</button>
             </form>
+        </div>
+            <p>TEXTO DE AYUDA</p>
         </div>
     </div>
     
