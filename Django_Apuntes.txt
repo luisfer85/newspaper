@@ -69,3 +69,6 @@
 
 ---PUNTOS DE RUPTURA---
     1  import pdb; pdb.set_trace() (Crea el punto de ruptura donde lo pongamos) (Tambien podemos usar ipdb)
+
+---HUEVOS INTERESANTES---
+    1  pip install django-bootstrap3 (Huevo para pintar formularios como bootstrap) (https://pypi.python.org/pypi/django-bootstrap3)
