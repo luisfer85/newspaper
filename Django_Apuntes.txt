@@ -68,4 +68,4 @@
     1  Crear la estructura de carpeta "management"
 
 ---PUNTOS DE RUPTURA---
-    1  import pdb; pdb.set_trace() (Crea el punto de ruptura donde lo pongamos)
+    1  import pdb; pdb.set_trace() (Crea el punto de ruptura donde lo pongamos) (Tambien podemos usar ipdb)
