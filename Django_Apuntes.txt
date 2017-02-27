@@ -72,3 +72,9 @@
 
 ---HUEVOS INTERESANTES---
     1  pip install django-bootstrap3 (Huevo para pintar formularios como bootstrap) (https://pypi.python.org/pypi/django-bootstrap3)
+
+---CONTEXT PROCESSOR---
+    Se ejecutan antes de renderizar la plantilla
+
+---MIDDLEWARES---
+    Clases que se ejecutan antes y/o despues de la vista
