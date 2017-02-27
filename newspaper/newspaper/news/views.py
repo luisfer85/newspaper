@@ -8,8 +8,7 @@ from newspaper.news.models import News
 
 
 def news_list(request):
-    news = News.objects.filter(
-        publish_date__lte=datetime.now()).order_by('publish_date')
+    news = News.objects.published()
     return render_to_response('news/news_list.html',
         {'news': news},
         context_instance=RequestContext(request))

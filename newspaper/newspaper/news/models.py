@@ -2,12 +2,16 @@ from django.db import models
 from django.utils.encoding import python_2_unicode_compatible
 from django.utils.translation import ugettext_lazy as _
 
+from newspaper.news.managers import BaseNewsManager
+
 
 @python_2_unicode_compatible
 class BaseNews(models.Model):
     title = models.CharField(_('title'), max_length=255)
     description = models.TextField(_('description'), blank = True, null = True, help_text = "No requerido")
     publish_date = models.DateTimeField(_('publish date'))
+
+    objects = BaseNewsManager()
 
     class Meta:
         abstract = True
