@@ -18,7 +18,9 @@
                 {% endbuttons %}
             </form>
         </div>
-            <p>TEXTO DE AYUDA</p>
+        <div class="col-lg-6">
+            <p>Si quieres borrar la noticia pulse en el boton de borrado</p>
+            <a href="{% url "news_delete" news_form.instance.pk %}" class="btn btn-danger">{% trans "Delete news" %}</a>
         </div>
     </div>
     
